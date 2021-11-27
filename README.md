@@ -1,5 +1,5 @@
 # Projeto Super Trunfo
-
+{CSS EM DESENVOLVIMENTO :)}
 ## O que foi desenvolvido:
 
 Neste projeto, desenvolvi um jogo no estilo Super Trunfo! Ao utilizar essa aplicação uma pessoa usuária deverá ser capaz de:
