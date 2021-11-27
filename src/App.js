@@ -188,6 +188,7 @@ class App extends React.Component {
             />
           </div>
           <div id="preview-content">
+            <h1>Pré-visualização</h1>
             <Card
               cardName={cardName}
               cardDescription={cardDescription}
@@ -225,7 +226,7 @@ class App extends React.Component {
                 return true;
               })
               .map((element, index) => (
-                <div key={index}>
+                <div id="span-content" key={index}>
                   <Card
                     cardName={element.cardName}
                     cardDescription={element.cardDescription}

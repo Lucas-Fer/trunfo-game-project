@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropType from 'prop-types';
 
+import '../Styles/Cards.css'
+
 export default class Card extends Component {
   render() {
     const {
@@ -17,12 +19,15 @@ export default class Card extends Component {
       index,
     } = this.props;
     return (
-      <main>
-        <h3 data-testid="name-card">
+      <div id="main-section-preview">
+      <section id="section-preview">
+        
+        <h3 id="cardNamePreview" data-testid="name-card">
           {cardName}
         </h3>
 
-        <img
+          <img
+          id="card-image-preview"
           data-testid="image-card"
           src={ cardImage }
           alt={ cardName }
@@ -66,7 +71,8 @@ export default class Card extends Component {
               </button>
             ) : null}
         </span>
-      </main>
+        </section>
+      </div>
     );
   }
 }
