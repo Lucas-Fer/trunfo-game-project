@@ -1,0 +1,39 @@
+form  {
+  width: 398px;
+  height: 734px;
+  left: 129px;
+  top: 233px;
+  font-family: Epilogue;
+}
+
+.title {
+  width: 355px;
+  height: 36px;
+  left: 131px;
+  top: 122px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 29px;
+
+  color: #444955;
+}
+
+.labelText {
+  font-family: Verdana;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+#cardName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+
+  width: 355px;
+  height: 37px;
+}

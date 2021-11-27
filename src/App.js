@@ -101,7 +101,7 @@ class App extends React.Component {
     const { checked } = target;
     if (checked) this.setState({ checkboxDisable: checked });
     else { this.setState({ checkboxDisable: false }); }
-  }
+  };
 
   isvalid() {
     const { cardName,
@@ -167,47 +167,52 @@ class App extends React.Component {
       handleCheckboxFilter,
     } = this;
     return (
-      <>
-        <div className="main-content">
-          <Form
-            cardName={ cardName }
-            cardDescription={ cardDescription }
-            cardAttr1={ cardAttr1 }
-            cardAttr2={ cardAttr2 }
-            cardAttr3={ cardAttr3 }
-            cardImage={ cardImage }
-            cardRare={ cardRare }
-            cardTrunfo={ cardTrunfo }
-            hasTrunfo={ hasTrunfo }
-            isSaveButtonDisabled={ isSaveButtonDisabled }
-            onInputChange={ onInputChange }
-            onSaveButtonClick={ onSaveButtonClick }
-          />
-
-          <Card
-            cardName={ cardName }
-            cardDescription={ cardDescription }
-            cardAttr1={ cardAttr1 }
-            cardAttr2={ cardAttr2 }
-            cardAttr3={ cardAttr3 }
-            cardImage={ cardImage }
-            cardRare={ cardRare }
-            cardTrunfo={ cardTrunfo }
-            key="preview"
-            index={ 0 }
-            cardCreate={ false }
-            onRemoveCard={ onRemoveCard }
-          />
-        </div>
+      <main>
+        <h1 id="title">Super Trunfo: The Witcher </h1>
+        <section className="main-content">
+          
+          <div id="form-content">
+            <Form
+              cardName={cardName}
+              cardDescription={cardDescription}
+              cardAttr1={cardAttr1}
+              cardAttr2={cardAttr2}
+              cardAttr3={cardAttr3}
+              cardImage={cardImage}
+              cardRare={cardRare}
+              cardTrunfo={cardTrunfo}
+              hasTrunfo={hasTrunfo}
+              isSaveButtonDisabled={isSaveButtonDisabled}
+              onInputChange={onInputChange}
+              onSaveButtonClick={onSaveButtonClick}
+            />
+          </div>
+          <div id="preview-content">
+            <Card
+              cardName={cardName}
+              cardDescription={cardDescription}
+              cardAttr1={cardAttr1}
+              cardAttr2={cardAttr2}
+              cardAttr3={cardAttr3}
+              cardImage={cardImage}
+              cardRare={cardRare}
+              cardTrunfo={cardTrunfo}
+              key="preview"
+              index={0}
+              cardCreate={false}
+              onRemoveCard={onRemoveCard}
+            />
+          </div>
+        </section>
 
         <div>
           <FilterCards
-            handleSelect={ handleSelect }
-            searchCard={ searchCard }
-            searchInput={ searchInput }
-            rarity={ rarity }
-            handleCheckboxFilter={ handleCheckboxFilter }
-            checkboxDisable={ checkboxDisable }
+            handleSelect={handleSelect}
+            searchCard={searchCard}
+            searchInput={searchInput}
+            rarity={rarity}
+            handleCheckboxFilter={handleCheckboxFilter}
+            checkboxDisable={checkboxDisable}
           />
 
           <span>
@@ -220,26 +225,26 @@ class App extends React.Component {
                 return true;
               })
               .map((element, index) => (
-                <div key={ index }>
+                <div key={index}>
                   <Card
-                    cardName={ element.cardName }
-                    cardDescription={ element.cardDescription }
-                    cardAttr1={ element.cardAttr1 }
-                    cardAttr2={ element.cardAttr2 }
-                    cardAttr3={ element.cardAttr3 }
-                    cardImage={ element.cardImage }
-                    cardRare={ element.cardRare }
-                    cardTrunfo={ element.cardTrunfo }
-                    cardCreate={ cardCreate }
-                    onRemoveCard={ onRemoveCard }
-                    key={ index }
-                    index={ index }
+                    cardName={element.cardName}
+                    cardDescription={element.cardDescription}
+                    cardAttr1={element.cardAttr1}
+                    cardAttr2={element.cardAttr2}
+                    cardAttr3={element.cardAttr3}
+                    cardImage={element.cardImage}
+                    cardRare={element.cardRare}
+                    cardTrunfo={element.cardTrunfo}
+                    cardCreate={cardCreate}
+                    onRemoveCard={onRemoveCard}
+                    key={index}
+                    index={index}
                   />
                 </div>
               ))}
           </span>
         </div>
-      </>
+      </main>
     );
   }
 }

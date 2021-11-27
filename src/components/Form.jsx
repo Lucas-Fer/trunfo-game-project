@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropType from 'prop-types';
-
+import '../Styles/Form.css'
 export default class Form extends Component {
   render() {
     const {
@@ -20,9 +20,9 @@ export default class Form extends Component {
 
     return (
       <form>
-        <h1>Crie sua carta</h1>
+        <h1 className="title">Crie sua carta</h1>
         <label htmlFor="cardName">
-          <p>Nome:</p>
+          <p className="labelText">Nome</p>
           <input
             type="text"
             data-testid="name-input"
@@ -34,7 +34,7 @@ export default class Form extends Component {
         </label>
 
         <label htmlFor="cardDescription">
-          <p>Descrição:</p>
+          <p className="labelText">Descrição:</p>
           <textarea
             data-testid="description-input"
             name="cardDescription"
@@ -45,7 +45,7 @@ export default class Form extends Component {
         </label>
 
         <label htmlFor="cardAttr1">
-          <p>Atributo 1</p>
+          <p className="labelText">Ataque</p>
           <input
             type="number"
             data-testid="attr1-input"
@@ -59,7 +59,7 @@ export default class Form extends Component {
         </label>
 
         <label htmlFor="cardAttr2">
-          <p>Atributo 2</p>
+          <p className="labelText">Defesa</p>
           <input
             type="number"
             data-testid="attr2-input"
@@ -73,7 +73,7 @@ export default class Form extends Component {
         </label>
 
         <label htmlFor="cardAttr3">
-          <p>Atributo 3</p>
+          <p className="labelText">Vida</p>
           <input
             type="number"
             data-testid="attr3-input"
@@ -87,7 +87,7 @@ export default class Form extends Component {
         </label>
 
         <label htmlFor="cardImage">
-          <p>URL da imagem</p>
+          <p className="labelText">URL da imagem</p>
           <input
             type="text"
             data-testid="image-input"
@@ -99,7 +99,7 @@ export default class Form extends Component {
         </label>
 
         <label htmlFor="cardRare">
-          <p>Raridade</p>
+          <p className="labelText">Raridade</p>
           <select
             data-testid="rare-input"
             id="cardRare"
@@ -116,7 +116,7 @@ export default class Form extends Component {
         {
           hasTrunfo === true ? <p>Você já tem um Super Trunfo em seu baralho</p> : (
             <label htmlFor="cardTrunfo">
-              <p>Super trunfo?</p>
+              <p className="labelText">Super trunfo?</p>
               <input
                 type="checkbox"
                 data-testid="trunfo-input"

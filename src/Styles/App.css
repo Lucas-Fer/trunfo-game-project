@@ -1,4 +1,25 @@
+main {
+  background-color:#FFFF;
+}
+
+#title {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #444955;
+}
 .main-content {
   display: flex;
   justify-content: center;
+}
+
+#form-content {
+  background-color: #FAFAFA;
+  width: 40%;
+  padding: 50px;
+}
+
+#preview-content {
+  background: #023031;
+  width: 40%;
+  padding: 50px;
 }
