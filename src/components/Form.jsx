@@ -24,6 +24,7 @@ export default class Form extends Component {
         <label htmlFor="cardName">
           <p className="labelText">Nome</p>
           <input
+            placeholder="Digite o nome da carta"
             type="text"
             data-testid="name-input"
             name="cardName"
@@ -36,6 +37,7 @@ export default class Form extends Component {
         <label htmlFor="cardDescription">
           <p className="labelText">Descrição:</p>
           <textarea
+            placeholder="Digite uma descrição"
             data-testid="description-input"
             name="cardDescription"
             id="cardDescription"
@@ -44,12 +46,13 @@ export default class Form extends Component {
           />
         </label>
 
-        <label htmlFor="cardAttr1">
-          <p className="labelText">Ataque</p>
+        <label htmlFor="cardAttr1" className="attr-box">
+          <p className="labelText" id="ataque">Ataque</p>
           <input
             type="number"
             data-testid="attr1-input"
             name="cardAttr1"
+            className="cardAttr"
             id="cardAttr1"
             value={ cardAttr1 }
             onChange={ onInputChange }
@@ -58,12 +61,13 @@ export default class Form extends Component {
           />
         </label>
 
-        <label htmlFor="cardAttr2">
-          <p className="labelText">Defesa</p>
+        <label htmlFor="cardAttr2" className="attr-box">
+          <p className="labelText" id="defesa">Defesa</p>
           <input
             type="number"
             data-testid="attr2-input"
             name="cardAttr2"
+            className="cardAttr"
             id="cardAttr2"
             value={ cardAttr2 }
             onChange={ onInputChange }
@@ -72,12 +76,13 @@ export default class Form extends Component {
           />
         </label>
 
-        <label htmlFor="cardAttr3">
-          <p className="labelText">Vida</p>
+        <label htmlFor="cardAttr3" className="attr-box">
+          <p className="labelText" id="vida">Vida</p>
           <input
             type="number"
             data-testid="attr3-input"
             name="cardAttr3"
+            className="cardAttr"
             id="cardAttr3"
             value={ cardAttr3 }
             onChange={ onInputChange }
@@ -115,8 +120,7 @@ export default class Form extends Component {
 
         {
           hasTrunfo === true ? <p>Você já tem um Super Trunfo em seu baralho</p> : (
-            <label htmlFor="cardTrunfo">
-              <p className="labelText">Super trunfo?</p>
+            <label htmlFor="cardTrunfo" id="labelTrunfo">
               <input
                 type="checkbox"
                 data-testid="trunfo-input"
@@ -125,6 +129,7 @@ export default class Form extends Component {
                 checked={ cardTrunfo }
                 onChange={ onInputChange }
               />
+              <p className="labelText">Super trunfo?</p>
             </label>
           )
         }
@@ -133,6 +138,7 @@ export default class Form extends Component {
           disabled={ isSaveButtonDisabled }
           onClick={ onSaveButtonClick }
           type="submit"
+          id="btn-save"
           data-testid="save-button"
         >
           Salvar
