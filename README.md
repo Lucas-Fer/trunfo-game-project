@@ -33,10 +33,6 @@ Neste projeto, fui capaz de:
 
   * Transmitir informações de componentes filhos para componentes pais via callbacks
 
-## Preview do projeto
-
-Basta ir na direita da página --> Na sessão "Envionments": "GitHub Page". depois ir em "View Deployment"!
-
 ## Pull Request original
 
 Abaixo segue o link para o PR original com todos meus commits e os desafios!
