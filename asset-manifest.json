@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/trunfo-game-project/static/css/main.e6346458.chunk.css",
-    "main.js": "/trunfo-game-project/static/js/main.89d03e8f.chunk.js",
-    "main.js.map": "/trunfo-game-project/static/js/main.89d03e8f.chunk.js.map",
+    "main.css": "/trunfo-game-project/static/css/main.d9760d4d.chunk.css",
+    "main.js": "/trunfo-game-project/static/js/main.9fe80c3b.chunk.js",
+    "main.js.map": "/trunfo-game-project/static/js/main.9fe80c3b.chunk.js.map",
     "runtime-main.js": "/trunfo-game-project/static/js/runtime-main.66e3a9dc.js",
     "runtime-main.js.map": "/trunfo-game-project/static/js/runtime-main.66e3a9dc.js.map",
     "static/js/2.70f0c46f.chunk.js": "/trunfo-game-project/static/js/2.70f0c46f.chunk.js",
     "static/js/2.70f0c46f.chunk.js.map": "/trunfo-game-project/static/js/2.70f0c46f.chunk.js.map",
     "index.html": "/trunfo-game-project/index.html",
-    "static/css/main.e6346458.chunk.css.map": "/trunfo-game-project/static/css/main.e6346458.chunk.css.map",
+    "static/css/main.d9760d4d.chunk.css.map": "/trunfo-game-project/static/css/main.d9760d4d.chunk.css.map",
     "static/js/2.70f0c46f.chunk.js.LICENSE.txt": "/trunfo-game-project/static/js/2.70f0c46f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.66e3a9dc.js",
     "static/js/2.70f0c46f.chunk.js",
-    "static/css/main.e6346458.chunk.css",
-    "static/js/main.89d03e8f.chunk.js"
+    "static/css/main.d9760d4d.chunk.css",
+    "static/js/main.9fe80c3b.chunk.js"
   ]
 }
