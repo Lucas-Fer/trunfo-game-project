@@ -36,3 +36,8 @@ Neste projeto, fui capaz de:
 ## Preview do projeto
 
 Basta ir na direita da página --> Na sessão "Envionments": "GitHub Page". depois ir em "View Deployment"!
+
+## Pull Request original
+
+Abaixo segue o link para o PR original com todos meus commits e os desafios!
+- [PR original](https://github.com/tryber/sd-016-a-project-tryunfo/pull/7)
