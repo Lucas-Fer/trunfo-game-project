@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropType from 'prop-types';
 
-import '../Styles/Cards.css'
+import '../Styles/Cards.css';
 
 export default class Card extends Component {
   render() {
@@ -20,57 +20,66 @@ export default class Card extends Component {
     } = this.props;
     return (
       <div id="main-section-preview">
-      <section id="section-preview">
-        
-        <h3 id="cardNamePreview" data-testid="name-card">
-          {cardName}
-        </h3>
+        <section id="section-preview">
+
+          <h3 id="cardNamePreview" data-testid="name-card">
+            {cardName}
+          </h3>
 
           <img
-          id="card-image-preview"
-          data-testid="image-card"
-          src={ cardImage }
-          alt={ cardName }
-        />
+            id="card-image-preview"
+            data-testid="image-card"
+            src={cardImage}
+            alt={cardName}
+          />
 
-        <span data-testid="description-card">
+          {/* <span id="card-description-preview" data-testid="description-card">
           {cardDescription}
-        </span>
+          </span> */}
+          <textarea
+            disabled
+            id="card-description-preview"
+            data-testid="description-card"
+            value={cardDescription}
+          />
 
-        <span data-testid="attr1-card">
-          {cardAttr1}
-        </span>
+          <h4 id="rare-card-preview" data-testid="rare-card">
+            Raridade: {cardRare.toUpperCase()}
+          </h4>
+          <div id="flex-div">
+            <div id="attr-preview">
+              <span className="attr-single" data-testid="attr1-card">
+                ⚔️ {cardAttr1}
+              </span>
+              <span className="attr-single" data-testid="attr2-card">
+                🛡️ {cardAttr2}
+              </span>
 
-        <span data-testid="attr2-card">
-          {cardAttr2}
-        </span>
+              <span className="attr-single" data-testid="attr3-card">
+                ❤️  {cardAttr3}
+              </span>
+            </div>
 
-        <span data-testid="attr3-card">
-          {cardAttr3}
-        </span>
+            {
+              cardTrunfo
+                ? <span id="trunfo-card-preview"
+                  data-testid="trunfo-card">Super TRUNFO!
+                  ⭐</span> : null
+            }
+          </div>
+          <span>
+            {cardCreate
+              ? (
+                <button
+                  onClick={() => onRemoveCard(index)}
+                  type="button"
+                  data-testid="delete-button"
+                >
+                  Excluir
 
-        <span data-testid="rare-card">
-          {cardRare}
-        </span>
-
-        {
-          cardTrunfo
-            ? <span data-testid="trunfo-card">Super Trunfo</span> : null
-        }
-
-        <span>
-          {cardCreate
-            ? (
-              <button
-                onClick={ () => onRemoveCard(index) }
-                type="button"
-                data-testid="delete-button"
-              >
-                Excluir
-
-              </button>
-            ) : null}
-        </span>
+                </button>
+              ) : null}
+          </span>
         </section>
       </div>
     );
