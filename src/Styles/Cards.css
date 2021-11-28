@@ -83,7 +83,15 @@
     color: #FFFFFF;
     display: flex;
     flex-direction: row;
-    margin-left: 120px;
+    margin-left: 110px;
     align-self: flex-end;
     margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 32px;
+  background: #003BE5;
+  border: 1px solid black;
+  border-radius: 2px;
+  color: #FFFFFF;
 }
