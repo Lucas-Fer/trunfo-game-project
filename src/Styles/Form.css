@@ -30,7 +30,7 @@ form  {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding-left: 1px;
 
   width: 355px;
   height: 37px;
@@ -116,4 +116,17 @@ form  {
   line-height: 29px;
 
   color: white; 
+}
+
+#span-logo {
+  position: absolute;
+  top: 329px;
+  right: 1100px;
+}
+
+#img-logo {
+  border: 1px solid black;
+  height: 200px;
+  width: 280px;
+  border-radius: 50%;
 }

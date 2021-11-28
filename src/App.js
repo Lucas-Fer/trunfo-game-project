@@ -206,7 +206,7 @@ class App extends React.Component {
           </div>
         </section>
 
-        <div>
+        <div id="section-search">
           <FilterCards
             handleSelect={handleSelect}
             searchCard={searchCard}
@@ -216,7 +216,7 @@ class App extends React.Component {
             checkboxDisable={checkboxDisable}
           />
 
-          <span>
+          <div>
             {arraySave
               .filter((inputFilter) => (inputFilter.cardName.includes(searchInput)))
               .filter((element) => {
@@ -243,7 +243,7 @@ class App extends React.Component {
                   />
                 </div>
               ))}
-          </span>
+          </div>
         </div>
       </main>
     );

@@ -1,0 +1,40 @@
+#main-search {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 100px;
+}
+
+#cardNameSearch {
+  display: flex;
+  width: 355px;
+  height: 37px;
+  padding: 12px 16px;
+  border: 1px solid #3D495C;
+}
+
+#cardDescriptionSearch {
+  margin-top: 10px;
+  background: #FFFFFF;
+  width: 362px;
+  height: 37px;
+  color: #023031;
+  padding: 12px 16px;
+  height: 45px;
+
+  border: 1px solid #3D495C;
+  border-radius: 6px;
+}
+
+#label-search {
+  display: flex;
+}
+
+#label-search p {
+  margin-left: 5px;
+}
+
+#filterInput {
+  margin-top: 10px;
+  height: 30px;
+  width: 20px;
+}

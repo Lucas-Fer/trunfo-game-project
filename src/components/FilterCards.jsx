@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import '../Styles/FilterCards.css'
 
 export default class FilterCards extends Component {
   render() {
@@ -12,9 +13,10 @@ export default class FilterCards extends Component {
       checkboxDisable,
     } = this.props;
     return (
-      <section>
-        <h1>Filtro de busca</h1>
+      <section id="main-search">
+        <h1 style={{ color: '#444955'}}>Filtro de busca</h1>
         <input
+          id="cardNameSearch"
           placeholder="Nome da carta"
           data-testid="name-filter"
           type="text"
@@ -27,7 +29,8 @@ export default class FilterCards extends Component {
           onChange={ handleSelect }
           data-testid="rare-filter"
           value={ rarity }
-          disabled={ checkboxDisable }
+          disabled={checkboxDisable}
+          id="cardDescriptionSearch"
         >
           <option value="todas">Todas</option>
           <option value="normal">Normal</option>
@@ -35,13 +38,14 @@ export default class FilterCards extends Component {
           <option value="muito raro">Muito raro</option>
         </select>
 
-        <label htmlFor="filterInput">
+        <label id="label-search" htmlFor="filterInput">
           <input
             type="checkbox"
             id="filterInput"
             data-testid="trunfo-filter"
             onClick={ handleCheckboxFilter }
           />
+          <p>Carta Trunfo</p>
         </label>
       </section>
     );

@@ -23,14 +23,18 @@ main {
 }
 
 #preview-content {
-  background-color: #540b0e;
+  background-color: #240046;
   width: 40%;
   padding: 50px;
   border: 1px solid black;
-  border-radius: 50px;
+  
 }
 
 #span-content {
-  border: 10px solid black;
-  background-color: #444955;
+  background-color: #240046;
+}
+
+#section-search {
+  display: flex;
+  min-height: 800px;
 }

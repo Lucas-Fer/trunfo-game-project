@@ -24,7 +24,7 @@ export default class Form extends Component {
         <label htmlFor="cardName">
           <p className="labelText">Nome</p>
           <input
-            placeholder="Digite o nome da carta"
+            placeholder="[Obrigatório!] Digite o nome da carta"
             type="text"
             data-testid="name-input"
             name="cardName"
@@ -37,7 +37,7 @@ export default class Form extends Component {
         <label htmlFor="cardDescription">
           <p className="labelText">Descrição:</p>
           <textarea
-            placeholder="Digite uma descrição"
+            placeholder="[Obrigatório!] Digite uma descrição"
             data-testid="description-input"
             name="cardDescription"
             id="cardDescription"
@@ -94,6 +94,7 @@ export default class Form extends Component {
         <label htmlFor="cardImage">
           <p className="labelText">URL da imagem</p>
           <input
+            placeholder="[Obrigatório!] Link da imagem"
             type="text"
             data-testid="image-input"
             name="cardImage"
@@ -144,7 +145,15 @@ export default class Form extends Component {
           Salvar
 
         </button>
+
+        <span id="span-logo">
+          <img id="img-logo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWlFH6DDCX8MdbQAp4bNo_nEHPA2HMZe80kQ&usqp=CAU"
+            alt="logo"
+          />
+        </span>
       </form>
+      
     );
   }
 }
