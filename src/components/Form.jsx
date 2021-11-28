@@ -146,12 +146,7 @@ export default class Form extends Component {
 
         </button>
 
-        <span id="span-logo">
-          <img id="img-logo"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWlFH6DDCX8MdbQAp4bNo_nEHPA2HMZe80kQ&usqp=CAU"
-            alt="logo"
-          />
-        </span>
+
       </form>
       
     );
