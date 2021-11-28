@@ -30,11 +30,20 @@ main {
   
 }
 
-#span-content {
-  background-color: #240046;
-}
-
 #section-search {
   display: flex;
   min-height: 800px;
+  margin-top: 50px;
+}
+
+#span-content {
+  margin: 30px 100px;
+}
+
+.flex-div {
+  display: flex;
+  background-color: #444955;
+  flex-wrap: wrap;
+  width: 66.1%;
+  justify-content: center;
 }

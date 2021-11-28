@@ -14,7 +14,7 @@ export default class FilterCards extends Component {
     } = this.props;
     return (
       <section id="main-search">
-        <h1 style={{ color: '#444955'}}>Filtro de busca</h1>
+        <h1 style={{ color: '#444955'}}>Busque no seu baralho</h1>
         <input
           id="cardNameSearch"
           placeholder="Nome da carta"

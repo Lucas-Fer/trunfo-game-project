@@ -216,7 +216,7 @@ class App extends React.Component {
             checkboxDisable={checkboxDisable}
           />
 
-          <div>
+          <div className="flex-div">
             {arraySave
               .filter((inputFilter) => (inputFilter.cardName.includes(searchInput)))
               .filter((element) => {
